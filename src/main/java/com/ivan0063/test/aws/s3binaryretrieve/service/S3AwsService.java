@@ -42,7 +42,8 @@ public class S3AwsService {
     /**
      * <p>
      * Retrieve and object from a bucket on AWS and converts it into an
-     * ByteArrayInputStream for its manipulation
+     * ByteArrayInputStream for its manipulation, if the file did not exist
+     * it will retrive a null value
      * </p>
      *
      * @param fileName

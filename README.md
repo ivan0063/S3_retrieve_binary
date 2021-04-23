@@ -13,13 +13,7 @@ the next environment variables
 * AWS_SECRET_ACCESS_KEY
 
 with you own values from the AWS account
-also its necessary to create a bucket to store the files, it
-has to be called
-
-~~~~~~~~~~~
-./saludos
-~~~~~~~~~~~
-
+also its necessary to create a bucket to store the files 
 for this example a PDF file was uploaded in order to show it 
 on the browser 
 
@@ -31,3 +25,13 @@ In the project there are 2 variables on the spring properties
 to retrieve the file
   
 file free to change those as you require
+
+# Endpoint
+The only endpoint to test is
+
+~~~~~
+/get/pdf/{fileName}/{directory}
+~~~~~
+
+you can test it on the browser, the directory is not necessary
+only if there is a folder inside the bucket
